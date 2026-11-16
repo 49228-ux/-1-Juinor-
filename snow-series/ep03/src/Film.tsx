@@ -73,7 +73,7 @@ const Scene: React.FC<SnowProps & { act?: Act; sneakK?: number; juLight?: number
 
 /* ─── shots ─── */
 const S_Front = () => { const f = useCurrentFrame(); return <Shot><Scene act="gone" crack={0.45} /><Cam p={[CAR[0] + 2.6, 1.2, CAR[2] + 12 - f * 0.02]} t={[CAR[0] - 15, 8, CAR[2] - 30]} fov={40} drift={0.4} /></Shot>; };
-const S_Glare = () => { const f = useCurrentFrame(); return <Shot><Scene act="gone" crack={0.45} /><Cam p={[CAR[0] + 0.4, 0.75, CAR[2] + 5.0 - f * 0.02]} t={[CAR[0], 0.7, CAR[2]]} fov={30} drift={0.6} /></Shot>; };
+const S_Glare = () => { const f = useCurrentFrame(); return <Shot><Scene act="gone" crack={0.45} /><Cam p={[CAR[0] + 0.6, 0.8, CAR[2] + 6.2 - f * 0.008]} t={[CAR[0], 0.7, CAR[2]]} fov={30} drift={0.6} /></Shot>; };
 const S_Face: React.FC<{ act?: Act; k?: number }> = ({ act = "door", k = 1.9 }) => { const f = useCurrentFrame(); const r = faceTo(DOOR_OUT, [CAR[0], 0, DOOR_OUT[2]]) - 0.5; return <Shot><Scene act={act} /><Cam p={add(ME_FACE, [Math.sin(r) * (k - f * 0.004), 0.05, Math.cos(r) * (k - f * 0.004)])} t={add(ME_FACE, [0, -0.08, 0])} fov={20} drift={0.4} /></Shot>; };
 const S_Sneak = () => { const f = useCurrentFrame(); const k = lin(f, 0, 75, 0.1, 0.85); const c: V = [ME_FROM[0] + (DOOR_OUT[0] - ME_FROM[0]) * k, 0, ME_FROM[2] + (DOOR_OUT[2] - ME_FROM[2]) * k]; return <Shot><Scene sneakK={k} /><Cam p={add(c, [3.2, 1.2, 2.0])} t={add(c, [-0.8, 0.7, -0.3])} fov={32} drift={0.5} /></Shot>; };
 const S_JuLight = () => { const f = useCurrentFrame(); const off = f < 18 ? 1 : 0; return <Shot><Scene juLight={off} /><Cam p={add(JU_AT, [2.0, 1.1, 1.1])} t={add(JU_AT, [0, 0.75, 0])} fov={24} drift={0.4} /></Shot>; };
