@@ -1,0 +1,4 @@
+{
+  "note": "act starts as script line numbers (or seconds). hero = the twist hit (the scarf flashback), end = end card.",
+  "acts": { "hook": "L1", "setting": "L5", "threat": "L13", "turn": "L17", "hero": "L18+1.4", "end": "END" }
+}
