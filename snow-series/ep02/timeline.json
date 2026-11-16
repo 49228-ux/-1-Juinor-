@@ -1,0 +1,4 @@
+{
+  "note": "act starts as script line numbers. hero = giant prints reveal, end = end card.",
+  "acts": { "hook": "L1", "setting": "L3", "threat": "L6", "turn": "L15", "hero": "L17+0.2", "end": "END" }
+}

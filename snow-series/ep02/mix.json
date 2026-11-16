@@ -1,0 +1,17 @@
+{
+  "video": "out/raw.mp4",
+  "voice": "vo/vo_aligned.wav",
+  "out": "out/ep02-v1.mp4",
+  "bgm": { "file": "vo/room.wav", "volume": 0.4 },
+  "clicks_volume": 0.9,
+  "sfx": [
+    { "file": "vo/sfx/wind.wav", "at": "0", "loop_to": "END", "volume": 0.6, "lowpass": 2400 },
+    { "file": "vo/sfx/thud.wav", "at": "L6+0.15", "volume": 0.9, "lowpass": 900 },
+    { "file": "vo/sfx/impact.wav", "at": "L6+0.2", "volume": 0.5 },
+    { "file": "vo/sfx/heartbeat.wav", "at": "L9", "volume": 0.6 },
+    { "file": "vo/sfx/riser.wav", "at": "L17-2.0", "volume": 0.55 },
+    { "file": "vo/sfx/impact.wav", "at": "L17+0.2", "volume": 0.85 },
+    { "file": "vo/sfx/impact.wav", "at": "L19+0.9", "volume": 0.7 }
+  ],
+  "note": "at = seconds or a line reference (L5, L5+0.4, L5e, END)."
+}
