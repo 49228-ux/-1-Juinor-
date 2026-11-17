@@ -1,0 +1,19 @@
+{
+  "video": "out/raw.mp4",
+  "voice": "vo/vo_aligned.wav",
+  "out": "out/ep04-v1.mp4",
+  "bgm": { "file": "vo/room.wav", "volume": 0.4 },
+  "clicks_volume": 0.9,
+  "sfx": [
+    { "file": "vo/sfx/wind.wav", "at": "0", "loop_to": "L12", "volume": 0.7, "lowpass": 2400 },
+    { "file": "vo/sfx/riser.wav", "at": "L5", "volume": 0.5 },
+    { "file": "vo/sfx/impact.wav", "at": "L7-0.1", "volume": 0.8 },
+    { "file": "vo/sfx/thud.wav", "at": "L8+0.1", "volume": 1.0 },
+    { "file": "vo/sfx/impact.wav", "at": "L10+0.15", "volume": 1.0 },
+    { "file": "vo/sfx/thud.wav", "at": "L10+0.2", "volume": 1.0, "lowpass": 500 },
+    { "file": "vo/sfx/impact.wav", "at": "L15-0.1", "volume": 0.8 },
+    { "file": "vo/sfx/heartbeat.wav", "at": "L16", "volume": 0.6 },
+    { "file": "vo/sfx/riser.wav", "at": "L17e+1.4", "volume": 0.7 }
+  ],
+  "note": "at = seconds or a line reference (L5, L5+0.4, L5e, END). The wind stops on line 12 (the silence)."
+}

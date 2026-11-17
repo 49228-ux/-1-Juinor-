@@ -1,0 +1,4 @@
+{
+  "note": "act starts as script line numbers. hero = clock-backwards reveal, end = end card.",
+  "acts": { "hook": "L1", "setting": "L5", "threat": "L10", "turn": "L14", "hero": "L15", "end": "END" }
+}
