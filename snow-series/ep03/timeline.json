@@ -1,0 +1,4 @@
+{
+  "note": "act starts as script line numbers. hero = the yeti looks back (twist), end = end card.",
+  "acts": { "hook": "L1", "setting": "L5", "threat": "L9", "turn": "L15", "hero": "L16+0.4", "end": "END" }
+}

@@ -1,0 +1,16 @@
+{
+  "video": "out/raw.mp4",
+  "voice": "vo/vo_aligned.wav",
+  "out": "out/ep01-v1.mp4",
+  "bgm": { "file": "vo/room.wav", "volume": 0.45 },
+  "clicks_volume": 0.9,
+  "sfx": [
+    { "file": "vo/sfx/wind.wav", "at": "0", "loop_to": "L5", "volume": 0.55, "lowpass": 2400 },
+    { "file": "vo/sfx/wind.wav", "at": "L13-0.1", "loop_to": "END", "volume": 0.6, "lowpass": 2400 },
+    { "file": "vo/sfx/thud.wav", "at": "L14+0.9", "volume": 0.7, "lowpass": 1200 },
+    { "file": "vo/sfx/riser.wav", "at": "L18-0.8", "volume": 0.55 },
+    { "file": "vo/sfx/impact.wav", "at": "L18+1.4", "volume": 0.85 },
+    { "file": "vo/sfx/heartbeat.wav", "at": "L20", "volume": 0.6 }
+  ],
+  "note": "at = seconds or a line reference (L5, L5+0.4, L5e, END). Wind runs under every snow scene; the room scenes keep only the room tone."
+}
